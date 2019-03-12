@@ -1,0 +1,21 @@
+{
+  "name": "node_web_app",
+  "version": "1.0.0",
+  "description": "This is postboard",
+  "main": "index.js",
+  "repository": "https://github.com/JangGeunSong/webApp_node.git",
+  "author": "JangGeunSong <sjg1468@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "pm2 start server/server.js --watch",
+    "test": "jest",
+    "stop": "pm2 stop server/server.js"
+  },
+  "devDependencies": {
+    "jest": "^24.4.0",
+    "start-watch": "^3.0.0"
+  },
+  "dependencies": {
+    "pm2": "^3.4.0"
+  }
+}

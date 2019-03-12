@@ -21,6 +21,7 @@ exports.postTmp = () => {
                         <th>Main</th>
                         <th>About</th>
                         <th>post_page</th>
+                        <th>FAQ</th>
                     </tr>
                 </table>
                 <!--navi table-->
