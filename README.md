@@ -2,4 +2,6 @@ This repository is for notice board making repository using the node js by serve
 
 Server side is node js. At first time I use the vanilla jacascript and vanilla raw node js. but in this month I will add the express or any other server side tool will use.
 
+Server side data base uses MongoDB install via yarn.
+
 Front end side also use the other frame work.
