@@ -16,6 +16,7 @@
     "start-watch": "^3.0.0"
   },
   "dependencies": {
+    "mongodb": "^3.1.13",
     "pm2": "^3.4.0"
   }
 }

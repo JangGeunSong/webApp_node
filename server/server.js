@@ -1,7 +1,25 @@
-var http = require('http');
-var fs = require('fs');
-var template = require('../view/form/temlplate');
-var path = require('path');
+const http = require('http');
+const fs = require('fs');
+const template = require('../view/form/temlplate');
+const path = require('path');
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
+
+// Connection URL
+const dbURL = 'mongodb://localhost:27017';
+
+// Database Name
+const dbName = 'myproject';
+
+// Use connect method to connect to the server
+MongoClient.connect(dbURL, function(err, client) {
+  assert.equal(null, err);
+  console.log("Connected successfully to server");
+
+  const db = client.db(dbName);
+
+  client.close();
+});
 
 var app = http.createServer((request, response) => {
     var url = request.url;
