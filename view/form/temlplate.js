@@ -5,38 +5,54 @@ const assert = require('assert');
 const dbURL = 'mongodb://localhost:27017';
 
 // Database Name
-const dbName = 'mycustomers';
+const dbName = 'postlist';
+
+var db = null;
+
+var tmp = ` `;
+
+var table = ` `;
 
 // Use connect method to connect to the server
 MongoClient.connect(dbURL, function(err, client) {
-  assert.equal(null, err);
-  console.log("Connected successfully to server");
-
-  const db = client.db(dbName);
-
-  findDocuments(db, () => {
-    console.log("Find Document is success!");
-  })
-
-  client.close();
-});
+    assert.equal(null, err);
+    console.log("Connected successfully to server");
+  
+    db = client.db(dbName);
+  
+    findDocuments(db, () => {
+      console.log("Find Document is success!");
+    })
+  
+    client.close();
+  });
 
 const findDocuments = function(db, callback) {
   // Get the documents collection
-  const collection = db.collection('customers');
+  const collection = db.collection('post');
   // Find some documents
   collection.find({}).toArray(function(err, docs) {
     assert.equal(err, null);
     console.log("Found the following records");
-    docs.forEach(element => {
-      console.log(element.gender);
+    docs.forEach((post) => {
+        console.log(post);
+        table = `
+        <tr class="posts">
+            <td>${post.num}</td>
+            <td>${post.subject}</td>
+            <td>${post.writer}</td>
+            <td>${post.date}</td>
+            <td>${post.hit}</td>
+        </tr>
+        `;
     });
+    console.log(tmp);
     callback(docs);
   });
 }
 
 exports.postTmp = () => {
-    return `
+    tmp = `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -76,13 +92,19 @@ exports.postTmp = () => {
                     <th>writer</th>
                     <th>date</th>
                     <th>hit</th>
-                </tr>
+                </tr>`;
+    findDocuments(db, () => {
+        console.log("Doucument find successfully!");
+    })
+    tmp = tmp + table;
+    tmp = tmp +  `
                 <!--this is add the post object at the db-->
-            </table>
-        </div>
-        <!--page main part-->
-    </body>
+                </table>
+            </div>
+            <!--page main part-->
+        </body>
     </html>
     `
+    return tmp;
 };
 //post board template

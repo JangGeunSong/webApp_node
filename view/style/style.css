@@ -44,14 +44,19 @@ body {
     background-color: white;
 }
 
-#main:hover {
-    background-color: rgb(211, 211, 211);
-}
-
 table {
+    text-align: center;
     width: 100%;
 }
 
 td, th {
     padding: 10px;
+}
+
+tr {
+    text-align: center;
+}
+
+tr:hover {
+    background-color: rgb(211, 211, 211);
 }
