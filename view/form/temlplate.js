@@ -34,9 +34,9 @@ const findDocuments = function(db, callback) {
   collection.find({}).toArray(function(err, docs) {
     assert.equal(err, null);
     console.log("Found the following records");
+    docs.reverse();
     docs.forEach((post) => {
-        console.log(post);
-        table = `
+        table = table + `
         <tr class="posts">
             <td>${post.num}</td>
             <td>${post.subject}</td>
@@ -93,9 +93,6 @@ exports.postTmp = () => {
                     <th>date</th>
                     <th>hit</th>
                 </tr>`;
-    findDocuments(db, () => {
-        console.log("Doucument find successfully!");
-    })
     tmp = tmp + table;
     tmp = tmp +  `
                 <!--this is add the post object at the db-->
