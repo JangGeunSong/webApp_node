@@ -46,7 +46,6 @@ const findDocuments = function(db, callback) {
         </tr>
         `;
     });
-    console.log(tmp);
     callback(docs);
   });
 }
@@ -71,10 +70,10 @@ exports.postTmp = () => {
             <nav id="navigation">
                 <table id="navi_table">
                     <tr>
-                        <th>Main</th>
-                        <th>About</th>
-                        <th>post_page</th>
-                        <th>FAQ</th>
+                        <th id="menu_main">Main</th>
+                        <th id="menu_about">About</th>
+                        <th id="menu_post">post_page</th>
+                        <th id="menu_FAQ">FAQ</th>
                     </tr>
                 </table>
                 <!--navi table-->
@@ -103,6 +102,7 @@ exports.postTmp = () => {
                 <h3>Written by SongJangGeun 2019</h3>
             </div>
             <!--page footer part-->
+            <script src="../controller/controller.js"></script>
         </body>
     </html>
     `

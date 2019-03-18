@@ -6,7 +6,6 @@ const path = require('path');
 // server create
 var app = http.createServer((request, response) => {
     var url = request.url; //request url
-    console.log(url);
     
     if(url === '/') { //If request index page
         response.writeHead(200);
@@ -22,6 +21,12 @@ var app = http.createServer((request, response) => {
         var imgPath = path.join('../webApp_nodejs/view', '', request.url);
         var fileStream = fs.createReadStream(imgPath);
         response.writeHead(200, {'Content-Type' : 'text/jpg'});
+        fileStream.pipe(response);
+    }
+    else if(url.match('controller.js')) {
+        var contPath = path.join('../webApp_nodejs/view', '', request.url);
+        var fileStream = fs.createReadStream(contPath);
+        response.writeHead(200, {'Content-Type' : 'text/javascript'});
         fileStream.pipe(response);
     }
 }); // define create server
