@@ -23,12 +23,26 @@ body {
     background-color: grey;
 }
 
+#menu_chart {
+    display: none;
+    background-color: grey;
+}
+
 #navi_table th {
     border-bottom: 5px solid;
     border-bottom-color: lightskyblue;
 }
 
+#navi_table td {
+    border-bottom: 5px solid;
+    border-bottom-color: lightskyblue;
+}
+
 #navi_table th:hover {
+    border-color: greenyellow;
+}
+
+#navi_table td:hover {
     border-color: greenyellow;
 }
 

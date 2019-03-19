@@ -75,6 +75,12 @@ exports.postTmp = () => {
                         <th id="menu_post">post_page</th>
                         <th id="menu_FAQ">FAQ</th>
                     </tr>
+                    <tr id="menu_chart">
+                        <td>Go To Main</td>
+                        <td>About</td>
+                        <td>post_page 1</td>
+                        <td>Way To Solve</td>
+                    </tr>
                 </table>
                 <!--navi table-->
             </nav>
