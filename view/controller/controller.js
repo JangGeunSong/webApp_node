@@ -1,5 +1,5 @@
 var naviTable = document.getElementById("navi_table");
-var menu_chart = document.getElementById("menu_chart");
+var navi_sub_table = document.getElementById("navi_sub_table");
 
 naviTable.addEventListener('click', (target) => {
     if(target.toElement.id === "menu_main") {
@@ -17,9 +17,17 @@ naviTable.addEventListener('click', (target) => {
 });
 
 naviTable.addEventListener('mouseenter', ()=> {
-    menu_chart.style.display = "table-row";
+    navi_sub_table.style.display = "table";
 });
 
 naviTable.addEventListener('mouseleave', () => {
-    menu_chart.style.display = "none"
+    navi_sub_table.style.display = "none"
+});
+
+navi_sub_table.addEventListener('mouseenter', ()=> {
+    navi_sub_table.style.display = "table";
+});
+
+navi_sub_table.addEventListener('mouseleave', () => {
+    navi_sub_table.style.display = "none"
 });

@@ -20,12 +20,18 @@ body {
 }
 
 #navi_table {
+    width: 1100px;
+    table-layout: fixed;
     background-color: grey;
 }
 
-#menu_chart {
+#navi_sub_table {
+    width: 1100px;
+    table-layout: fixed;
+    position : absolute;
     display: none;
     background-color: grey;
+    opacity: 0.8;
 }
 
 #navi_table th {
@@ -33,7 +39,7 @@ body {
     border-bottom-color: lightskyblue;
 }
 
-#navi_table td {
+#navi_sub_table th {
     border-bottom: 5px solid;
     border-bottom-color: lightskyblue;
 }
@@ -42,7 +48,7 @@ body {
     border-color: greenyellow;
 }
 
-#navi_table td:hover {
+#navi_sub_table th:hover {
     border-color: greenyellow;
 }
 
@@ -58,17 +64,17 @@ body {
     background-color: white;
 }
 
-table {
-    text-align: center;
-    width: 100%;
-}
-
 td, th {
     padding: 10px;
 }
 
 tr {
     text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding : 0;
 }
 
 .posts:hover {

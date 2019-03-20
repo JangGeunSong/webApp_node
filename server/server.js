@@ -29,6 +29,12 @@ var app = http.createServer((request, response) => {
         response.writeHead(200, {'Content-Type' : 'text/javascript'});
         fileStream.pipe(response);
     }
+    else if(url.match('.ico')) {
+        var faviPath = path.join('../webApp_nodejs/view', '', request.url);
+        var fileStream = fs.createReadStream(faviPath);
+        response.writeHead(200, {'Content-Type' : 'text/ico'});
+        fileStream.pipe(response);
+    }
 }); // define create server
 
 app.listen(3000);

@@ -60,6 +60,7 @@ exports.postTmp = () => {
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>board</title>
         <link rel="stylesheet" href="../style/style.css">
+        <link rel="shortcut icon" href="../style/favicon.ico">
     </head>
     <body>
         <div id="header">
@@ -75,14 +76,33 @@ exports.postTmp = () => {
                         <th id="menu_post">post_page</th>
                         <th id="menu_FAQ">FAQ</th>
                     </tr>
-                    <tr id="menu_chart">
-                        <td>Go To Main</td>
-                        <td>About</td>
-                        <td>post_page 1</td>
-                        <td>Way To Solve</td>
-                    </tr>
                 </table>
                 <!--navi table-->
+                <table id="navi_sub_table">
+                    <tr id="menu_chart">
+                        <th>
+                            <ul>
+                                <li>Main Hi</li>
+                            </ul>
+                        </th>
+                        <th>
+                            <ul>
+                                <li>About</li>
+                            </ul>
+                        </th>
+                        <th>
+                            <ul>
+                                <li>Post 1</li>
+                            </ul>
+                        </th>
+                        <th>
+                            <ul>
+                                <li>FAQ solution</li>
+                            </ul>
+                        </th>
+                    </tr>
+                </table>
+                <!--navi sub table-->
             </nav>
             <!--content navigation-->
             <div id="pagetop">
