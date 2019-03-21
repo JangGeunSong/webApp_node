@@ -80,24 +80,27 @@ exports.postTmp = () => {
                 <!--navi table-->
                 <table id="navi_sub_table">
                     <tr id="menu_chart">
-                        <th>
+                        <th class="menu_th">
                             <ul>
-                                <li>Main Hi</li>
+                                <li class="menu_li">Main Hi</li>
+                                <li class="menu_li">Main Hi</li>
+                                <li class="menu_li">Main Hi</li>
+                                <li class="menu_li">Main Hi</li>
                             </ul>
                         </th>
-                        <th>
+                        <th class="menu_th">
                             <ul>
-                                <li>About</li>
+                                <li class="menu_li">About</li>
                             </ul>
                         </th>
-                        <th>
+                        <th class="menu_th">
                             <ul>
-                                <li>Post 1</li>
+                                <li class="menu_li">Post 1</li>
                             </ul>
                         </th>
-                        <th>
+                        <th class="menu_th">
                             <ul>
-                                <li>FAQ solution</li>
+                                <li class="menu_li">FAQ solution</li>
                             </ul>
                         </th>
                     </tr>
