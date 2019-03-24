@@ -6,5 +6,3 @@ Server side data base uses MongoDB install via yarn.
 MongoDB has the post data ==> title, writer, date, hit, and post number
 
 Front end side also use the other frame work.
-
-contents will add
