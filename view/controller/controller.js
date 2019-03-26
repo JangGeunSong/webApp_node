@@ -37,7 +37,6 @@ for(i=0; i<menu_th.length; i++) {
     menu_th[i].addEventListener('mouseenter', (e) => {
         if(e.target.className === 'menu_th') {
             e.target.style.setProperty('background-color', 'white');
-            console.log(e.target.className);
         }
     });
 }
@@ -46,7 +45,6 @@ for(i=0; i<menu_th.length; i++) {
     menu_th[i].addEventListener('mouseleave', (e) => {
         if(e.target.className === 'menu_th') {
             e.target.style.setProperty('background-color', 'grey');
-            console.log(e.target.className);
         }
     });
 }
