@@ -109,7 +109,7 @@ exports.postTmp = () => {
             </nav>
             <!--content navigation-->
             <div id="pagetop">
-                <span id="main_banner" role="button"><img src="" alt="main_img" id="main_img"></span>
+                <span id="main_banner" role="button"><img src="../style/banner.jpg" alt="main_img" id="main_img"></span>
             </div>
             <!--top of the page and bottom of the navigation-->
             <table id="main">
