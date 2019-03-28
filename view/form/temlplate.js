@@ -7,11 +7,11 @@ const dbURL = 'mongodb://localhost:27017';
 // Database Name
 const dbName = 'postlist';
 
-var db = null;
+let db = null;
 
-var tmp = ` `;
+let tmp = ` `;
 
-var table = ` `;
+let table = ` `;
 
 // Use connect method to connect to the server
 MongoClient.connect(dbURL, function(err, client) {
