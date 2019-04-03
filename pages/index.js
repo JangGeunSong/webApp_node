@@ -1,3 +1,20 @@
+import Head from 'next/head';
+import Centerbody from '../component/Centerbody';
+import Footer from '../component/Footer';
+
+const Index = () => (
+    <div>
+        <Head>
+            <title>board</title>
+        </Head>
+        <Centerbody />
+        <Footer />
+    </div>
+);
+
+export default Index;
+
+/*
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 
@@ -128,7 +145,7 @@ exports.postTmp = () => {
             </div>
             <!--page main part-->
             <div id="footer">
-                <h3>Written by SongJangGeun 2019</h3>
+                
             </div>
             <!--page footer part-->
             <script src="../controller/controller.js"></script>
@@ -138,3 +155,4 @@ exports.postTmp = () => {
     return tmp;
 };
 //post board template
+*/

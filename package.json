@@ -7,16 +7,19 @@
   "author": "JangGeunSong <sjg1468@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "pm2 start server/server.js --watch",
-    "test": "jest",
-    "stop": "pm2 stop server/server.js"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "devDependencies": {
     "jest": "^24.4.0",
     "start-watch": "^3.0.0"
   },
   "dependencies": {
-    "mongodb": "^3.1.13",
-    "pm2": "^3.4.0"
+    "mongodb": "^3.2.2",
+    "next": "^8.0.4",
+    "pm2": "^3.4.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
