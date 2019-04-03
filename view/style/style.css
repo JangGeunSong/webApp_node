@@ -1,11 +1,12 @@
-body {
+.body {
     margin : 0;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
     background-image: url("Ns9OZ5p.jpg");
     background-size: cover;
 }
 
-#header {
+.header {
     text-align: center;
     margin-top: 0px;
     background-color: red;

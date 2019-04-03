@@ -1,14 +1,7 @@
-This repository is for notice board making repository using the node js by server side and other tools.
+This branch is make the master branch application to the react + next.js
 
-Server side is node js. At first time I use the vanilla jacascript and vanilla raw node js. but in this month I will add the express or any other server side tool will use.
+I make almost stuff just add the event listener to the application then done.
 
-Server side data base uses MongoDB install via yarn.
-MongoDB has the post data ==> title, writer, date, hit, and post number
+After that, I will jump to the angular or vue.js front end frame work practice by doing this project.
 
-Front end side also use the other frame work.
-
-Now add the input form then this project end.
-
-Front-end branch --> react part will add
-
-This is first branch.
+server side maybe use PHP because the server side web application PHP is most using the server side language.

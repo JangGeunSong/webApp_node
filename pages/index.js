@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import Head from 'next/head';
+import Header from '../component/header';
 import Centerbody from '../component/Centerbody';
 import Footer from '../component/Footer';
 
@@ -7,8 +9,22 @@ const Index = () => (
         <Head>
             <title>board</title>
         </Head>
+        <Header />
         <Centerbody />
         <Footer />
+
+        <style jsx global>{`
+            body {
+                margin : 0;
+                font-family: Arial, Helvetica, sans-serif;
+                margin : auto;
+                padding : 0;
+                height: 100%;
+                background: url('/static/image/Ns9OZ5p.jpg');
+                background-repeat : no-repeat;
+                background-size: cover;
+            }
+        `}</style>
     </div>
 );
 
