@@ -36,6 +36,7 @@ const Centerbody = () => (
         <style jsx>{`
             .center_body {
                 margin: auto;
+                text-align : right;
                 padding: 10px;
                 width: 70%;
             }
