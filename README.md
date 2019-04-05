@@ -16,3 +16,4 @@ It needs to server side go to node.js framework next.js // 4/3 added.
 4/4 ---> react + next.js is almost done. now rest of thing is add the DB and event listener.
 
 4/5 ---> Add the event listener and change some component to class
+         Add the banner to header component. 
