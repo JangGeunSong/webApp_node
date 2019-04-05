@@ -8,23 +8,12 @@ const Index = () => (
     <div>
         <Head>
             <title>board</title>
+            <link rel="stylesheet" href="/static/index.css" />
+            <link rel="shortcut icon" href="/static/favicon.ico"></link>
         </Head>
         <Header />
         <Centerbody />
         <Footer />
-
-        <style jsx global>{`
-            body {
-                margin : 0;
-                font-family: Arial, Helvetica, sans-serif;
-                margin : auto;
-                padding : 0;
-                height: 100%;
-                background: url('/static/image/Ns9OZ5p.jpg');
-                background-repeat : no-repeat;
-                background-size: cover;
-            }
-        `}</style>
     </div>
 );
 

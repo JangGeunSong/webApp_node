@@ -1,20 +1,18 @@
+import Head from 'next/head';
+import Header from '../component/header';
+import Footer from '../component/Footer';
+import About_center from '../component/about_center';
+
 const About = () => (
     <div>
-        This is About page
-
-
-        <style jsx global>{`
-            body {
-                margin : 0;
-                font-family: Arial, Helvetica, sans-serif;
-                margin : auto;
-                padding : 0;
-                height: 100%;
-                background: url('/static/image/Ns9OZ5p.jpg');
-                background-repeat : no-repeat;
-                background-size: cover;
-            }
-        `}</style>
+        <Head>
+            <title>about</title>
+            <link rel="stylesheet" href="/static/about.css" />
+            <link rel="shortcut icon" href="/static/favicon.ico"></link>
+        </Head>
+        <Header />        
+        <About_center />
+        <Footer />
     </div>
 );
 

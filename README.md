@@ -7,3 +7,7 @@ After that, I will jump to the angular or vue.js front end frame work practice b
 server side maybe use PHP because the server side web application PHP is most using the server side language.
 
 Add the event for the component and for the convinence change the some component as class
+
+Navigation bar is completed and complete to the event listener
+
+I know about the event. component to component event is very hard and doesn't make sense. So, design well to nice work the event.
