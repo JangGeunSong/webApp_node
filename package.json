@@ -7,7 +7,7 @@
   "author": "JangGeunSong <sjg1468@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "nodemon ssr-server.js",
     "build": "next build",
     "start": "next start"
   },
@@ -18,9 +18,14 @@
     "url-loader": "^1.1.2"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "mongodb": "^3.2.2",
+    "mongoose": "^5.4.22",
     "next": "^8.0.4",
     "next-images": "^1.1.1",
+    "nodemon": "^1.18.10",
     "pm2": "^3.4.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
