@@ -19,3 +19,5 @@ It needs to server side go to node.js framework next.js // 4/3 added.
  Add the banner to header component. 
 
 move the next front-end framework this time.
+
+4/8 ---> Renew the react + next.js branch combind Express and MongoDB for using database display post list.
