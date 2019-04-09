@@ -2,19 +2,30 @@ import { getPost } from '../action/postAction';
 import PropTypes from 'prop-types';
 
 class PostTable extends React.Component{
- 
-    static PropTypes = {
-        posts : PropTypes.object.isRequired
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            data : []
+        }
     }
 
     componentDidMount() {
-        this.props.getPost();
+        fetch('api/posts')
+            .then(response => {
+                console.log(response);
+                response.json()
+            })
+            .then(posts => {
+                console.log(posts);
+                this.setState({ data : posts })
+            })
     }
 
     render() {
-        const { posts } = this.props.posts;
+        console.log(this.state.posts);
         return (
-            <div>
+            <div className="post_body">
                 <table className="post_table">
                     <tr>
                         <th>Num</th>
@@ -22,25 +33,23 @@ class PostTable extends React.Component{
                         <th>Authur</th>
                         <th>Hit</th>
                     </tr>
-                    {posts.map(({num, subject, writer, hit}) => {
-                        <tr>
-                            <td>{num}</td>
-                            <td>{subject}</td>
-                            <td>{writer}</td>
-                            <td>{hit}</td>
-                        </tr>
-                    })}
                 </table>
+                <br></br>
         
                 <style jsx global>{`
+                    .post_body {
+                        text-align : center;
+                    }
+
                     .post_table {
                         background-color : white;
+                        float : right;
                         margin : 0;
                         text-align : center;
                         table-layout : fixed;
                     }
         
-                    .post_table th td {
+                    .post_table th {
                         border-left-style: solid;
                         border-right-style: solid;
                         background-color : grey;

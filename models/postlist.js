@@ -20,4 +20,4 @@ let PostSchema = new Schema({
     }
 });
 
-module.exports = PostSchema = mongoose.model('post', PostSchema);
+module.exports = PostSchema = mongoose.model('postlist', PostSchema);

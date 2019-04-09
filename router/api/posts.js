@@ -8,10 +8,10 @@ const Post = require('../../models/postlist');
 // @desc   GET All Posts
 // @access Public
 
-router.get('/', (request, response) => {
+router.get('/post', (request, response) => {
     Post.find()
     .sort({ date : -1 })
-    .then(posts => response.json(posts));
+    .then(posts => response.json(posts))
 });
 
 module.exports = router;
