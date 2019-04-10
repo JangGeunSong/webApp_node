@@ -23,3 +23,5 @@ move the next front-end framework this time.
 4/8 ---> Renew the react + next.js branch combind Express and MongoDB for using database display post list.
 
 4/9 ---> some changes react branch
+
+4/10 ---> I will check briefly some technique link to DB another repo and comeback.
