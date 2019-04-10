@@ -1,17 +1,18 @@
 const express = require('express');
-const router = express.Router();
+const Archetype = require('archetype-js');
+const { ObjectId } = require('mongodb');
+const PostType = require('../../models/postlist');
 
-//Posts Model
-const Post = require('../../models/postlist');
+module.exports = db => {
+    const router = express.Router();
 
-// @route  GET api/posts
-// @desc   GET All Posts
-// @access Public
+    const wrapAsync = handler => (req, res) => handler(req)
+    .then(result => res.json(result))
+    .catch(error => res.status(500).json({ error: error.message }))
 
-router.get('/post', (request, response) => {
-    Post.find()
-    .sort({ date : -1 })
-    .then(posts => response.json(posts))
-});
+    router.get('/', wrapAsync(async function(request) {
+        return db.collection('postlist').find().sort({ createAt : -1 }).toArray()
+    }))
 
-module.exports = router;
+
+}

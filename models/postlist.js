@@ -1,7 +1,6 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const Archetype = require('archetype-js');
 
-let PostSchema = new Schema({
+module.exports = new Archetype({
     num : {
         type : Number,
         required : true
@@ -18,6 +17,4 @@ let PostSchema = new Schema({
         type : Number,
         required : true
     }
-});
-
-module.exports = PostSchema = mongoose.model('postlist', PostSchema);
+}).compile('posts');

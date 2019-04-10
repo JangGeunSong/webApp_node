@@ -1,5 +1,5 @@
-import { getPost } from '../action/postAction';
-import PropTypes from 'prop-types';
+import React from 'react'
+import * as superagent from 'superagent'
 
 class PostTable extends React.Component{
 
@@ -10,20 +10,7 @@ class PostTable extends React.Component{
         }
     }
 
-    componentDidMount() {
-        fetch('api/posts')
-            .then(response => {
-                console.log(response);
-                response.json()
-            })
-            .then(posts => {
-                console.log(posts);
-                this.setState({ data : posts })
-            })
-    }
-
     render() {
-        console.log(this.state.posts);
         return (
             <div className="post_body">
                 <table className="post_table">
