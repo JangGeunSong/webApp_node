@@ -25,3 +25,5 @@ move the next front-end framework this time.
 4/9 ---> some changes react branch
 
 4/10 ---> I will check briefly some technique link to DB another repo and comeback.
+
+This repo will be rebuild
