@@ -26,4 +26,4 @@ move the next front-end framework this time.
 
 4/10 ---> I will check briefly some technique link to DB another repo and comeback.
 
-This repo will be rebuild
+This repo will be rebuild. REST API will learn
